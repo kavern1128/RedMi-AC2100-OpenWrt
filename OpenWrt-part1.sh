@@ -25,7 +25,12 @@ addFeeds(){
 # sed -i '$a src-git custom https://github.com/kiddin9/openwrt-packages.git;master' feeds.conf.default
 addFeeds custom https://github.com/kiddin9/openwrt-packages.git
 
+# 移除要替换的包
+rm -rf feeds/packages/net/v2ray-geodata
+
 # 添加软件包源
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon  #新的argon主题 (custom已附带)
 # git clone --depth=1 https://github.com/llccd/openwrt-fullconenat.git package/openwrt-fullconenat #全锥形NAT (custom已附带)
 # git clone --depth=1 https://github.com/peter-tank/luci-app-fullconenat package/luci-app-fullconenat #全锥形NAT LUCI界面 (custom已附带)
