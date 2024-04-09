@@ -23,7 +23,7 @@ addFeeds(){
 # 添加 feed 源
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git custom https://github.com/kiddin9/openwrt-packages.git;master' feeds.conf.default
-addFeeds custom https://github.com/kiddin9/openwrt-packages.git
+# addFeeds custom https://github.com/kiddin9/openwrt-packages.git
 
 # 移除要替换的包
 rm -rf feeds/packages/net/v2ray-geodata
