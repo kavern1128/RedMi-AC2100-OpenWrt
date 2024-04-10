@@ -200,7 +200,7 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: 上传 firmware 到 release
-      uses: softprops/action-gh-release@master
+      uses: softprops/action-gh-release@v1
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
