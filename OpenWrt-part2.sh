@@ -28,7 +28,6 @@ CONFIG_PACKAGE_luci-app-mosdns=y
 
 # 修改默认IP
 # sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
-# 以下配置已改为固件内的defsetting服务进行设置
 
 # 修改设备名称
 # sed -i 's/OpenWrt/HMAC2100/g' package/base-files/files/bin/config_generate
